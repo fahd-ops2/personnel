@@ -1,68 +1,62 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="utf-8"%>
      <%@ page import="java.util.*" %>
     <%@ page import="classes.*"%>
     <%@ page import="DAO.*"%>
     <%@ page import="java.sql.*"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>matiere</title>
-</head>
-<body>
+
     <%
-    String cinn1 =request.getParameter("cin");
+    String cinn2 =request.getParameter("cin");
     
-    CadreDao peee= new CadreDao();
-	ResultSet rsn = peee.selectbycin(cinn1);
+    MatiereDao peee2= new MatiereDao();
+	ResultSet rees2 = peee2.selectbycin(cinn2);
 	%>
  <div class="card text-center">
               	<div class="card-header">
                		 <ul class="nav nav-tabs card-header-tabs">
                   	<li class="nav-item">
-                   	 <a class="nav-link active" href="#Showcadre" data-toggle="tab">Cadre histori</a>
+                   	 <a class="nav-link active" href="#ShowMatieres" data-toggle="tab">Matiers</a>
                  	 </li>
                   	<li class="nav-item">
-                   	 <a class="nav-link " href="#addCadre" data-toggle="tab">ajouter un cadre</a>
+                   	 <a class="nav-link " href="#addMatiere" data-toggle="tab">ajouter une Matiere</a>
                   	</li>
                   
 	                </ul>
               	</div>    
               	<div class="tab-content">  
-                  	<div class="card-body tab-pane active" role="tabpanel" id="Showcadre">
+                  	<div class="card-body tab-pane active" role="tabpanel" id="ShowMatieres">
                       	<table class="table myDatatable" >
                       	<thead class="thead-dark">
                         	<tr class="text-center" >
                           	<th scope="col" >Nom En Francais</th>
                           	<th scope="col">الاسم بالعربية</th>
-                          	<th scope="col">Cadre</th>
+                          	<th scope="col">Matiere</th>
                      
                         	</tr>
                       	</thead>
                       	<tbody>
-                        	<%  while(rsn.next()){
+                        	<%  while(rees2.next()){
                        		   out.write("<tr>");
-                          	    out.write("<td class='align-middle'>"+rsn.getString(1)+"</th>");
-                           		   out.write("<td class='align-middle' >"+rsn.getString(2)+"</td>");
-                            		  out.write("<td class='align-middle'>"+rsn.getString(3)+"</td>");
+                          	    out.write("<td class='align-middle'>"+rees2.getString(1)+"</th>");
+                           		   out.write("<td class='align-middle' >"+rees2.getString(2)+"</td>");
+                            		  out.write("<td class='align-middle'>"+rees2.getString(3)+"</td>");
                           
                             
                            		   out.write("</tr>");
                          		 }
-                        		  rsn.close();
+                        		  rees2.close();
                          		 %>
                      	 </tbody>
                       </table>
                    	</div>
                   
-                  <div class="card-body tab-pane" role="tabpanel" id="addCadre">
+                  <div class="card-body tab-pane" role="tabpanel" id="addMatiere">
                       <div class="row justify-content-center">
                            <div class="col-6 " >
            
-                              <form method="post" action="Cadres">
+                              <form method="post" action="Matieres">
                                   
-                               <%out.write("<input type='text'   style='display: none;' name='PersonnelID' value='"+cinn1+"'>"); %>
+                               <%out.write("<input type='text'   style='display: none;' name='PersonnelID' value='"+cinn2+"'>"); %>
   
                                   <div class="form-group">
                                     <label for="exampleInputEmail1">Le Cadre</label>
@@ -86,5 +80,3 @@
                  </div>
               </div>  
  </div>
-</body>
-</html>

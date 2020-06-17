@@ -58,12 +58,12 @@
             	</div>
             	<div class="card-body tab-pane" role="tabpanel" id="cadress">
 	 			<%@ include file="showCadre.jsp"%>
-            				 
+            			
             	</div>
-            	<div class="card-body tab-pane" role="tabpanel" id="matiere">
+           
+           	<div class="card-body tab-pane" role="tabpanel" id="matiere">
 				<%@ include file="showMatiere.jsp"%>
             	</div>
-          
             	
             
             </div>
