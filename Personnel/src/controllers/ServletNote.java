@@ -50,7 +50,7 @@ public class ServletNote extends HttpServlet {
 			} catch (Exception e) {
 				System.out.println("not");
 			}
-			this.getServletContext().getRequestDispatcher("/ShowPersonnels.jsp").forward(request, response);
+			this.getServletContext().getRequestDispatcher("/ShowPersonnel.jsp").forward(request, response);
 		}
 		if (actionID.equals("addNotep")){
 			int PersonnelID= Integer.parseInt(request.getParameter("PersonnelID"));
@@ -64,7 +64,7 @@ public class ServletNote extends HttpServlet {
 			} catch (Exception e) {
 				System.out.println("not");
 			}
-			this.getServletContext().getRequestDispatcher("/ShowPersonnels.jsp").forward(request, response);
+			this.getServletContext().getRequestDispatcher("/ShowPersonnel.jsp").forward(request, response);
 		}
 	}
 
