@@ -71,7 +71,7 @@ public ResultSet selectbycin(String cin){
 
 public static void main(String[] args){
 	try{
-		DiplomeP dp= new DiplomeP(1, 03, "dsi", "bts", "20/1/2000");
+		DiplomeP dp= new DiplomeP(3, 03, "dsi", "bts", "20/1/2000");
 	 DiplomePDao ado=new DiplomePDao();
 	 ado.insertDiplomeP(dp);
 	 System.out.println("alo");

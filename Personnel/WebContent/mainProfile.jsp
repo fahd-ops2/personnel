@@ -48,6 +48,7 @@
             	</div>
             	<div  class="card-body tab-pane" role="tabpanel" id="dep">
             		<%@ include file="ShowDiplome.jsp"%>
+            		
             	</div>
             	<div class="card-body tab-pane" role="tabpanel" id="missions">
             		<%@ include file="showMission.jsp"%>
@@ -56,11 +57,11 @@
             		<%@ include file="ShowNote.jsp"%>
             	</div>
             	<div class="card-body tab-pane" role="tabpanel" id="cadress">
-<%--             				 <%@ include file="showCadre.jsp"%> --%>
+	 			<%@ include file="showCadre.jsp"%>
             				 
             	</div>
             	<div class="card-body tab-pane" role="tabpanel" id="matiere">
-<%--             			<%@ include file="showMatiere.jsp"%> --%>
+				<%@ include file="showMatiere.jsp"%>
             	</div>
           
             	

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
     <%@ page import="java.util.*" %>
     <%@ page import="classes.*"%>
@@ -43,29 +43,30 @@ String cinn =request.getParameter("cin");
 	PersonnelDao p= new PersonnelDao();
 	ResultSet rs = p.SelectAll();
 
-	while(rs.next()){
-		out.write("<tr>");
-		out.write("<th class='align-middle'>"+rs.getString(5)+"</td>");
-		out.write("<td class='align-middle'>"+rs.getString(4)+"</td>");
-		out.write("<td class='align-middle'>"+rs.getString(3)+"</td>");
-		out.write("<td class='align-middle text-center' scope='col' style='width: 400px;'>");
-		out.write(" <div class='row ml-auto'>");
-		out.write("<form action='mainProfile.jsp' method='POST' class='col-4 '>");
-		out.write(" <input type='text' value='"+rs.getString(3)+"' name ='cin' id='cinBtn' style='display: none;'>");
-		out.write("<input type='submit' value='show more'  class='btn btn-info badge-pill '>");
-		out.write(" </form>");
-		out.write("<form action='updatePersonnel.jsp' method='POST' class='col-4 '>");
-		out.write(" <input type='text' value='"+rs.getString(3)+"' name ='cin' id='cinBtn' style='display: none;'>");
-		out.write(" <input type='submit' value='Update' name='Update' class='btn btn-info badge-pill'>");
-		out.write(" </form>");
-		out.write("<form action='Personnels' method='Get' class='col-4 '>");
-		out.write(" <input type='text' value='"+rs.getString(3)+"' name ='delete'  id='cinBtn' style='display: none;'>");
-		out.write(" <input type='submit' value='Delete'  class='btn btn-danger badge-pill'>");
-		out.write("</div>");
-		out.write(" </form>");
-		out.write("</tr>");
+			while(rs.next()){
+				out.write("<tr>");
+				out.write("<th class='align-middle'>"+rs.getString(5)+"</td>");
+				out.write("<td class='align-middle'>"+rs.getString(4)+"</td>");
+				out.write("<td class='align-middle'>"+rs.getString(3)+"</td>");
+				out.write("<td class='align-middle text-center' scope='col' style='width: 400px;'>");
+				out.write(" <div class='row ml-auto'>");
+				out.write("<form action='mainProfile.jsp' method='POST' class='col-4 '>");
+				out.write(" <input type='text' value='"+rs.getString(3)+"' name ='cin' id='cinBtn' style='display: none;'>");
+				out.write("<input type='submit' value='show more'  class='btn btn-info badge-pill '>");
+				out.write(" </form>");
+				out.write("<form action='updatePersonnel.jsp' method='POST' class='col-4 '>");
+				out.write(" <input type='text' value='"+rs.getString(3)+"' name ='cin' id='cinBtn' style='display: none;'>");
+				out.write(" <input type='submit' value='Update' name='Update' class='btn btn-info badge-pill'>");
+				out.write(" </form>");
+				out.write("<form action='Personnels' method='Get' class='col-4 '>");
+				out.write(" <input type='text' value='"+rs.getString(3)+"' name ='delete'  id='cinBtn' style='display: none;'>");
+				out.write(" <input type='submit' value='Delete'  class='btn btn-danger badge-pill'>");
+				out.write("</div>");
+				out.write(" </form>");
+				out.write("</tr>");
 		
 	}
+	rs.close();
 %>
  		</tbody>
 	</table>
