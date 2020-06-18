@@ -53,7 +53,7 @@ public class ServletCadre extends HttpServlet {
 			
 				e.printStackTrace();
 			}
-			this.getServletContext().getRequestDispatcher("/ShowCadres.jsp").forward(request, response);
+			this.getServletContext().getRequestDispatcher("/ShowPersonnel.jsp").forward(request, response);
 	}
 	}
 	}

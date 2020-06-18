@@ -14,14 +14,14 @@
         <div class="card ">
             <div class="card-header">
                 <div class=" row">
-                    <a href="ShowPersonnel.jsp" class="ml-auto"><button  type="button" class="btn btn-secondary"> Reteur <i class="fas fa-arrow-circle-left" style="color:snow;"></i></button></a>
+                    <a href="ShowPersonnel.jsp" class="ml-auto"><button  type="button" class="btn btn-secondary"> Retour <i class="fas fa-arrow-circle-left" style="color:snow;"></i></button></a>
                      </div>
                 <ul class="nav nav-tabs card-header-tabs ">
                     <li class="nav-item">
                       <a class="nav-link active " href="#Stepe" data-toggle="tab">Ajoute Personnel</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#Steps" data-toggle="tab">Szuvi L'ajoute </a>
+                      <a class="nav-link " href="#Steps" data-toggle="tab">Suivi L'ajoute </a>
                     </li>
                 
                    
@@ -77,7 +77,7 @@
 
                         <div class="col-md-6 ml-auto mr-auto ">
                             <div class="form-group row">
-                            <label for="adresse">Adress</label>
+                            <label for="adresse">Adresse</label>
                             <textarea class="form-control" name="adresse" rows="3"></textarea>
                             <span class="valid-feedback"></span>
                             </div>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="col-md-6 ml-auto mr-auto ">
                             <div class="form-group row">
-                                <legend class="col-form-label col-sm-4 pt-0">Nationalite marocan(e)</legend>
+                                <legend class="col-form-label col-sm-4 pt-0">Nationalite marocain(e)</legend>
                                 <div class="col-sm-8">
                                   <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio"  name="nationalite" id="gridRadios1" value="option1" checked>
@@ -111,7 +111,7 @@
 
                         
                             <div class="form-group row">
-                                <legend class="col-form-label col-sm-4 pt-0">Sex</legend>
+                                <legend class="col-form-label col-sm-4 pt-0">Sexe</legend>
                                 <div class="col-sm-8">
                                   <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="sexe" id="male" value="option1" checked>

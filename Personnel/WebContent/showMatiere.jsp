@@ -53,27 +53,29 @@
                   <div class="card-body tab-pane" role="tabpanel" id="addMatiere">
                       <div class="row justify-content-center">
                            <div class="col-6 " >
-           
+                               <%
+									        
+									         PersonnelDao persma=new PersonnelDao();
+									         ResultSet ressm =persma.selectby(cinn2);
+									         while (ressm.next()){
+									
+									       %>
                               <form method="post" action="Matieres">
                                   
-                               <%out.write("<input type='text'   style='display: none;' name='PersonnelID' value='"+cinn2+"'>"); %>
+                               <input type='text'   style='display: none;' name='PersonnelID' value="<%=ressm.getInt("ID") %>">
   
                                   <div class="form-group">
-                                    <label for="exampleInputEmail1">Le Cadre</label>
-                                    <input type="text" class="form-control" name="Cadre" id="" >
-                                    <small id="emailHelp" class="form-text text-muted">Inserer le Cadre</small>
+                                    <label for="exampleInputEmail1">La Matiere</label>
+                                    <input type="text" class="form-control" name="NomMatiere" id="" >
+                                    <small id="emailHelp" class="form-text text-muted">Inserer la Matiere</small>
                                   </div>
 
-                                  <div class="form-group">
-                                    <label for="exampleInputEmail1">Le code de Cadre</label>
-                                    <input type="text" class="form-control" name="CodeC" id="" >
-                                    <small id="emailHelp" class="form-text text-muted">Inserer le Code de Cadre</small>
-                                  </div>
+                                  
   
-                                  <input type="submit" name="actionID" class="btn btn-primary"  value="enregestrer">
+                                  <input type="submit" name="actionID" class="btn btn-primary"  value="ajout">
                                  
                                 </form>
-                             
+                             <%} %>
                           </div>
                       </div>
                 

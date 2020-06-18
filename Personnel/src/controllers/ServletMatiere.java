@@ -50,7 +50,7 @@ public class ServletMatiere extends HttpServlet {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			this.getServletContext().getRequestDispatcher("/ShowMatieres.jsp").forward(request, response);
+			this.getServletContext().getRequestDispatcher("/ShowPersonnel.jsp").forward(request, response);
 	}
 	}
 }

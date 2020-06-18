@@ -148,15 +148,15 @@ public class PersonnelDao {
 		//System.out.println(personne.toString());
 		//pdao.updatePersonnel(personne);
 		//select all
-			//PersonnelDao ss= new PersonnelDao() ;
+			PersonnelDao ss= new PersonnelDao() ;
 			//ArrayList<Personnel> pp =ss.SelectAll();
 			//System.out.println(pp.toString());
-	    /*ResultSet res =pdao.selectby("qq");
+	   ResultSet res =ss.SelectAll();
 		
 	    while (res.next()){
-	    	System.out.println(res.getInt(1)+" "+res.getInt(15)+" "+res.getString(2)+" "+res.getString(3)+" "+res.getString(4)+" "+res.getString(5)+" "+res.getDate(11)+" "+res.getString(7)+" "+res.getString(8)+" "+res.getString(9)+" "+res.getString(10)+" "+res.getString(12)+" "+res.getString(13)+" "+res.getString(14)+" "+res.getString(16)+" "+res.getString(17)+" "+res.getDate(18)+" "+res.getDate(6));
+	    	System.out.println(res.getObject(1));
 	    	
-	    }*/
+	    }
 		System.out.println("done");}
 		catch(Exception e){
 			System.out.println("not done");}

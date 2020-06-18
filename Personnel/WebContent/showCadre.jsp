@@ -54,10 +54,16 @@
                   <div class="card-body tab-pane" role="tabpanel" id="addCadre">
                       <div class="row justify-content-center">
                            <div class="col-6 " >
-           
+                                <%
+					         
+					         PersonnelDao perc=new PersonnelDao();
+					         ResultSet respc =perc.selectby(cinn1);
+					         while (respc.next()){
+
+       						%>
                               <form method="post" action="Cadres">
                                   
-                               <%out.write("<input type='text'   style='display: none;' name='PersonnelID' value='"+cinn1+"'>"); %>
+                               <input type='text'   style='display: none;' name='PersonnelID' value="<%=respc.getInt("ID")%>">
   
                                   <div class="form-group">
                                     <label for="exampleInputEmail1">Le Cadre</label>
@@ -71,10 +77,10 @@
                                     <small id="emailHelp" class="form-text text-muted">Inserer le Code de Cadre</small>
                                   </div>
   
-                                  <input type="submit" name="actionID" class="btn btn-primary"  value="enregestrer">
+                                  <input type="submit" name="actionID" class="btn btn-primary"  value="ajout">
                                  
                                 </form>
-                             
+                             <%} %>
                           </div>
                       </div>
                 
