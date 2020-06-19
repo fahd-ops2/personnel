@@ -20,9 +20,7 @@
         <form method="post" action="Admins">
         <div class="card ">
             <div class="card-header">
-                <div class=" row">
-                    <a href="ShowPersonnel.jsp" class="ml-auto"><button  type="button" class="btn btn-secondary"> Retour <i class="fas fa-arrow-circle-left" style="color:snow;"></i></button></a>
-                     </div>
+            
              
             </div>
         
