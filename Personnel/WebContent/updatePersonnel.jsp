@@ -35,21 +35,7 @@
           <input type="hidden" class=""   style="display: none;" name="cin" value="<%=o%>">
            
                 
-                    <div class="col-md-6 ml-auto mr-auto ">
-                        <div class="form-group row">
-                        <label for="num_p">Numero</label>
-                        <input type="text" name="num_p"  class="form-control"  ">
-                        <span class="valid-feedback"></span>
-                        </div>
-                    </div>
                     
-                    <div class="col-md-6 ml-auto mr-auto ">
-                        <div class="form-group row">
-                        <label for="cin">CIN</label>
-                        <input type="text"  name="cin"  class="form-control"  ">
-                        <span class="valid-feedback"></span>
-                        </div>
-                    </div>
 
                     <div class="col-md-6 ml-auto mr-auto ">
                         <div class="form-group row">
@@ -67,15 +53,6 @@
                         </div>
                     </div>
                     
-               
-
-                    <div class="col-md-6 ml-auto mr-auto ">
-                        <div class="form-group row">
-                        <label for="Datenaissance">Date de Naissance</label>
-                        <input type="date" name="Datenaissance"  class="form-control" ">
-                        <span class="valid-feedback"></span>
-                        </div>
-                    </div>
 
                     <div class="col-md-6 ml-auto mr-auto ">
                         <div class="form-group row">
@@ -148,7 +125,7 @@
                     <div class="col-md-6 ml-auto mr-auto ">
                         <div class="form-group row">
                         <label for="tel">Echelon:</label>
-                        <input type="text" name="Echelle" value="<%=res.getString("Echelle")%>"  class="form-control"  >
+                        <input type="text" name="Echelle" value="<%=res.getString("Echelon")%>"  class="form-control"  >
                         <span class="valid-feedback"></span>
                         </div>
                     </div>
@@ -190,7 +167,7 @@
                                             out.write("</div>");
                                             out.write("</div>");
 
-                                        }elseif(res.getString("Situationfamiliale")=="motala9"){
+                                        }else if(res.getString("Situationfamiliale")=="motala9"){
     
                                             out.write("<div class='col-md-6 ml-auto mr-auto ''>");
                                                 out.write("<div class='form-group row'>");
@@ -225,8 +202,8 @@
                                                                 out.write("</div>");
                                                                 out.write("</div>");
                                                                 out.write("</div>");
-    
-                                        }elseif(res.getString("Situationfamiliale")=="motazawij"){
+     
+                                        }else if(res.getString("Situationfamiliale")=="motazawij"){
     
                                             out.write("<div class='col-md-6 ml-auto mr-auto ''>");
                                                 out.write("<div class='form-group row'>");
@@ -262,7 +239,8 @@
                                                                 out.write("</div>");
                                                                 out.write("</div>");
     
-                                        }elseif(res.getString("Situationfamiliale")=="celib"){
+                                        }
+                                        else if(res.getString("Situationfamiliale")=="celib"){
     
                                             out.write("<div class='col-md-6 ml-auto mr-auto ''>");
                                                 out.write("<div class='form-group row'>");
@@ -361,10 +339,10 @@
                                 </div>
 
      
-
+                 <%} %>
                     <div class="row justify-content-center">
                         <div class="col-3 text-center ">
-                        <input type="submit"  class="btn btn-success" name="actionID" value="save">
+                        <input type="submit"  class="btn btn-success" name="actionID" value="update">
                          </div>
                         
                        </div>

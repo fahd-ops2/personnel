@@ -28,8 +28,15 @@
                       <div class="card-body tab-pane active" role="tabpanel" id="Stepe">
                         <div class="col-md-6 ml-auto mr-auto ">
                             <div class="form-group row">
-                            <label for="num_p">Date d'ebouche :</label>
+                            <label for="num_p">Date d'embauche :</label>
                             <input type="date"  name="Dateembauche"  class="form-control"  required onfocusout="validateNom()">
+                            <span class="valid-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ml-auto mr-auto ">
+                            <div class="form-group row">
+                            <label for="num_p">Date designation :</label>
+                            <input type="date"  name="DateDesignation"  class="form-control"  required onfocusout="validateNom()">
                             <span class="valid-feedback"></span>
                             </div>
                         </div>
@@ -87,7 +94,7 @@
                
                         <div class="col-md-6 ml-auto mr-auto ">
                             <div class="form-group row">
-                            <label for="Datenaissance">Numbre d'Enfant:</label>
+                            <label for="NbreEnfant">Numbre d'Enfant:</label>
                             <input type="Text" name="NbreEnfant"  class="form-control" required onfocusout="validateNom()">
                             <span class="valid-feedback"></span>
                             </div>
@@ -115,7 +122,7 @@
                         </div>
                     <div class="col-md-6 ml-auto mr-auto ">
                         <div class="form-group row">
-                        <label for="Datenaissance">Numro de la : </label>
+                        <label for="Num_tE">Numro  : </label>
                         <input type="Text" name="Num_tE"  class="form-control" required onfocusout="validateNom()">
                         <span class="valid-feedback"></span>
                         </div>
@@ -124,7 +131,7 @@
 
                         <div class="row justify-content-center">
                             <div class="col-3 text-center ">
-                            <input type="submit"  class="btn btn-success" name="actionID" value="save">
+                            <input type="submit"  class="btn btn-success" name="actionID" value="suivre">
                              </div>
                             
                            </div>
