@@ -11,10 +11,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Insert title here</title>
-   <script src="js/jquery-3.5.1.min.js" ></script>
-    <script src="js/bootstrap.min.js" ></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+    
+
     <link rel="stylesheet" href="fontawsome/css/all.min.css">
+    
+    
+       
+       
+  	
+        
+         
 <title>Insert title here</title>
 </head>
 <body>      

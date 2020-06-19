@@ -8,27 +8,72 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    
+   
+    
+    <link rel="stylesheet" href="fontawsome/css/all.min.css">
 <title>update</title>
 </head>
 <body>
       <%@ include file="Index.html" %>
-      <form class="" method="post" action="Admins"  >
-      <% int o= Integer.parseInt(request.getParameter("mod"));
+       <div class="container">
+        <form method="post" action="Admins">
+        <div class="card ">
+            <div class="card-header">
+            
+             
+            </div>
+        
+            <div class="tab-content">
+                <% int o= Integer.parseInt(request.getParameter("mod"));
          AdminDao ad= new AdminDao();
          ResultSet res=ad.selectby(o);
          while(res.next()){
       %>
-          <input type="text" class=""  name="idA" value="<%=o %>"><br>
-          <label>Email: </label><br>
-		  <input type="email" class=""   name="email" value="<%=res.getString("login")%>"><br><br>
-		  
-		  <label>mot de passe </label><br>
-		  <input type="password" class=""   name="password" value="<%=res.getString("password")%>"><br><br>
-		  
-		  <input type="submit" class="" name="actionID" value="update">
-		  
-      <%} %>
-		</form>  
-		<a href="AdminView.jsp"> <input type="submit" class="" name="actionID" value="retour"></a>
+              <input type="hidden" class=""   style="display: none;" name="cin" value="<%=o%>">
+               
+                    
+                        <div class="col-md-6 ml-auto mr-auto ">
+                            <div class="form-group row">
+                            <label for="num_p">Numero</label>
+                            <input type="email" name="email"  class="form-control"  value="<%=res.getString("login")%>">
+                            <span class="valid-feedback"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 ml-auto mr-auto ">
+                            <div class="form-group row">
+                            <label for="cin">Password</label>
+                            <input type="password""  name="password"  class="form-control"  ">
+                            <span class="valid-feedback"></span>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 ml-auto mr-auto ">
+                            <div class="form-group row">
+                            <label for="nom">Confirm Password</label>
+                            <input type="password" name="nothing"  class="form-control" value="<%=res.getString("Pren_n")%>">
+                            <span class="valid-feedback"></span>
+                            </div>
+                        </div>
+
+                      
+    
+                       
+    
+                        <div class="row justify-content-center">
+                            <div class="col-3 text-center ">
+                            <input type="submit"  class="btn btn-success" name="actionID" value="save">
+                             </div>
+                            
+                           </div>
+                        
+                    <%} %>
+                    
+                   </div>
+            </div>
+            </form>
+            
+        </div> 
 </body>
 </html>
