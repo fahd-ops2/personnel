@@ -209,7 +209,7 @@
                                                                 out.write("</div>");
                                                                 out.write("</div>");
      
-                                        }else if(res.getString("Situationfamiliale")=="motazawij"){
+                                        }else if(res.getString("Situationfamiliale").equals("motazawij")){
     
                                             out.write("<div class='col-md-6 ml-auto mr-auto ''>");
                                                 out.write("<div class='form-group row'>");
