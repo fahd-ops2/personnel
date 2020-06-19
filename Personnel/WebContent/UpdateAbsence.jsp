@@ -14,30 +14,99 @@
 
        <%@ include file="Index.html" %><br>
       
+   <div class="container">
+ <form method="post" action="Absences">
+ <div class="card ">
+     <div class="card-header">
      
-       <form class="" method="post" action="Absences"  >
-       <% 
-         int o= Integer.parseInt(request.getParameter("id"));
-         AbsenceDao ad= new AbsenceDao();
-         ResultSet res=ad.selectbyid(o);
-         while(res.next()){
-      %>
-          
-		  <input type="hidden" class=""   name="id" value="<%=res.getInt("ID") %>"><br><br>
-		  
-          <label>duree par jour : </label><br>
-		  <input type="text" class=""   name="duree" value="<%=res.getInt("duree") %>"><br><br>
-		  
-		  <label>justification: </label><br>
-		  <input type="radio" id="justifie" name="justification" value="justifie">
-          <label for="justifie">justifie</label><br>
-          <input type="radio" id="non justifie" name="justification" value="non justifie">
-          <label for="non justifie">non justifiee</label><br>
-         
-		  <input type="submit" class="" name="actionID" value="updateAb">
-		   <%} %>
+         <ul class="nav nav-tabs card-header-tabs ">
+
+           </ul>
         
-		</form>  
+     </div>
+ 
+     <div class="tab-content">
+      <% 
+      int o= Integer.parseInt(request.getParameter("id"));
+      AbsenceDao ad= new AbsenceDao();
+      ResultSet res=ad.selectbyid(o);
+      while(res.next()){
+   %>
+        
+        
+      <input type="hidden" class=""   name="idperso" value="<%=res.getInt("ID") %>"><br><br>
+
+               <div class="card-body tab-pane active" role="tabpanel" id="Stepe">
+                 <div class="col-md-6 ml-auto mr-auto ">
+                     <div class="form-group row">
+                     <label for="dap">duree par jour:</label>
+                     <input type="text"  name="duree" class="form-control"  value="<%=res.getInt("duree") %>" >
+                     <span class="valid-feedback"></span>
+                     </div>
+                 </div>
+                 
+              
+                 if(es.getInt("justification")=="justifier"){
+                  <div class="form-group row">
+                    <legend class="col-form-label col-sm-4 pt-0">Justification</legend>
+                    <div class="col-sm-8">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="justification"   value="justifier" checked>
+                        <label class="form-check-label" >
+                          justifier
+                        </label>
+                      </div>
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="justification" value=" Non-justifier">
+                        <label class="form-check-label" >
+                         Non-justifier
+                        </label>
+                      </div>
+                </div>
+            </div>
+  
+
+                 }else{
+                  <div class="form-group row">
+                    <legend class="col-form-label col-sm-4 pt-0">Justification</legend>
+                    <div class="col-sm-8">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="justification"   value="justifier">
+                        <label class="form-check-label" >
+                          justifier
+                        </label>
+                      </div>
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="justification" value=" Non-justifier"  checked>
+                        <label class="form-check-label" >
+                         Non-justifier
+                        </label>
+                      </div>
+                </div>
+            </div>
+                 }
+                
+
+         
+
+                 <div class="row justify-content-center">
+                     <div class="col-3 text-center ">
+                     <input type="submit"  class="btn btn-success" name="actionID" value="save">
+                      </div>
+                     
+                    </div>
+                 
+              <%}%>
+             
+            
+     </div>
+     </div>
+     </div>
+     </form>
+     
+ </div>  
 		
 </body>
 </html>

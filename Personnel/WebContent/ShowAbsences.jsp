@@ -8,13 +8,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <link rel="stylesheet" href="fontawsome/css/all.min.css">
 <title>show absences</title>
 </head>
 <body>
     <%@ include file="Index.html" %>
-    <form action='ShowAbsences.jsp' method='Get'><input type='text' name ='cin'  > <input type='submit' class='' value='search'></form></td>
-    
-<%  
+    <% 
 	AbsenceDao p= new AbsenceDao();
 	ResultSet rs = p.selectAll();%>
        <div class="container">
@@ -40,7 +39,7 @@
                       <div class="card-body tab-pane active" role="tabpanel" id="Stepe">
 
 
-                        <table class="table">
+                        <table class="table myDatatable">
                             <thead class="thead-dark">
                               <tr class="text-center" >
                                 <th scope="col" >Nom En Francais</th>
@@ -59,8 +58,8 @@
                                     out.write("<td class='align-middle'>"+rs.getString(1)+"</td>");
                                         out.write("<td class='align-middle'>"+rs.getString(2)+"</td>");
                                         out.write("<td class='align-middle'>"+rs.getString(3)+"</td>");
-                                        out.write("<td class='align-middle'>"+rs.getString(4)+"</td>");
-                                    if(rs.getString(5)=="non-justifier"){
+                                        out.write("<td class='align-middle'>"+rs.getString(5)+"</td>");
+                                    if(rs.getString(4).equals("non-justifier")){
                                         out.write("<td class='align-middle text-center'><div class='btn-danger' style='padding:8px;'><i class='fas fa-times'></i></div></td>");
                                     }else{
                                         out.write("<td class='align-middle text-center'><div class='btn-success' style='padding:8px;'><i class='fas fa-check'></i></div></td>");
@@ -92,5 +91,19 @@
         </div>  
 
     </div>
+        <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script >
+        $('.myDatatable').dataTable({
+            searching :'false',
+            ordering : 'false',
+            lengthMenu :[[5,10,15,20,-1],[5,10,15,20,'All']],
+            createRow : function (row ,data,index){
+                if(data[5].replace(/[\$,]/g,'')*1>150000){
+                    $('td',row).eq(5).addClass('text-success');
+                }
+            }
+        });
+    </script>
 </body>
 </html>
