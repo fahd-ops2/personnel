@@ -30,12 +30,12 @@
          ResultSet res=ad.selectby(o);
          while(res.next()){
       %>
-              <input type="hidden" class=""   style="display: none;" name="cin" value="<%=o%>">
+              <input type="hidden" class=""   style="display: none;" name="idA" value="<%=res.getString("ID")%>">
                
                     
                         <div class="col-md-6 ml-auto mr-auto ">
                             <div class="form-group row">
-                            <label for="num_p">Numero</label>
+                            <label for="email">email</label>
                             <input type="email" name="email"  class="form-control"  value="<%=res.getString("login")%>">
                             <span class="valid-feedback"></span>
                             </div>
@@ -44,7 +44,7 @@
                         <div class="col-md-6 ml-auto mr-auto ">
                             <div class="form-group row">
                             <label for="cin">Password</label>
-                            <input type="password""  name="password"  class="form-control"  ">
+                            <input type="password"  name="password"  class="form-control" value="<%=res.getString("Password")%> ">
                             <span class="valid-feedback"></span>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                         <div class="col-md-6 ml-auto mr-auto ">
                             <div class="form-group row">
                             <label for="nom">Confirm Password</label>
-                            <input type="password" name="nothing"  class="form-control" value="<%=res.getString("Pren_n")%>">
+                            <input type="password" name="password"  class="form-control" >
                             <span class="valid-feedback"></span>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
     
                         <div class="row justify-content-center">
                             <div class="col-3 text-center ">
-                            <input type="submit"  class="btn btn-success" name="actionID" value="save">
+                            <input type="submit"  class="btn btn-success" name="actionID" value="update">
                              </div>
                             
                            </div>
