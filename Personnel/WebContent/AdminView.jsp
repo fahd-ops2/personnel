@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-utf-8"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
     <%@ page import="java.util.*" %>
     <%@ page import="classes.*"%>
     <%@ page import="DAO.*"%>
@@ -10,7 +10,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- <script src="js/jquery-3.5.1.min.js" ></script>
+<title>Insert title here</title>
+   <script src="js/jquery-3.5.1.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawsome/css/all.min.css">
@@ -18,7 +19,7 @@
 </head>
 <body>      
            <%@ include file="Index.html" %>
-         
+           
     <div class="container">
         <div class="card ">
             <div class="card-header ">
@@ -49,17 +50,19 @@ ResultSet rs = sd.selectAll();
 				out.write("<td class='align-middle'>"+rs.getString(3)+"</td>");
 				out.write("<td class='align-middle'>"+rs.getString(4)+"</td>");
 				out.write("<td class='align-middle text-center' scope='col' style='width: 400px;'>");
-				out.write(" <div class='row ml-auto'>");
-
+				out.write(" <div class='row text-center '>");
+               out.write("<div class='col'>");
 				out.write("<form action='mainProfile.jsp' method='POST' class='col-4 '>");
-				out.write(" <input type='text' value='"+rs.getString(3)+"' name ='cin' id='cinBtn' style='display: none;'>");
-				out.write("<input type='submit' value='show more'  class='btn btn-info badge-pill '>");
+				out.write(" <input type='text' value='"+rs.getString(1)+"'  name ='mod' id='cinBtn' style='display: none;'>");
+				out.write("<input type='submit' value='Changer'  class='btn btn-info  '>");
                 out.write(" </form>");
-                
-				out.write("<form action='updatePersonnel.jsp' method='POST' class='col-4 '>");
-				out.write(" <input type='text' value='"+rs.getString(3)+"' name ='cin' id='cinBtn' style='display: none;'>");
-				out.write(" <input type='submit' value='Update' name='Update' class='btn btn-info badge-pill'>");
+               	out.write("</div>");
+                out.write("<div class='col'>");
+				out.write("<form action='Admins' method='Get' class='col-4 '>");
+				out.write(" <input type='text' value='"+rs.getString(1)+"' name ='mod' id='cinBtn' style='display: none;'>");
+				out.write(" <input type='submit' value='Delete' name='Update' class='btn  btn-danger '>");
                 out.write(" </form>");
+                out.write("</div>");
                 out.write(" </td>");
 				out.write("</tr>");
 		
@@ -84,7 +87,5 @@ ResultSet rs = sd.selectAll();
                     $('td',row).eq(5).addClass('text-success');
                 }
             }
-        }); 
-        </script>
-</body>
-</html>
+        });
+    </script>
