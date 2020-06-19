@@ -350,7 +350,7 @@
                         <div class="col-3 text-center ">
                         <input type="submit"  class="btn btn-success" name="actionID" value="update">
                          </div>
-                        <%} %>
+                        
                        </div>
                     
                 
