@@ -40,13 +40,13 @@
                  <div class="col-md-6 ml-auto mr-auto ">
                      <div class="form-group row">
                      <label for="dap">duree par jour:</label>
-                     <input type="text"  name="duree" class="form-control"  value="<%=res.getInt("duree") %>" >
+                     <input type="text"  name="duree" class="form-control"  value="<%=res.getString("duree") %>" >
                      <span class="valid-feedback"></span>
                      </div>
                  </div>
                  
               
-                 if(es.getInt("justification")=="justifier"){
+                 if(res.getString("justification")=="justifier"){
                   <div class="form-group row">
                     <legend class="col-form-label col-sm-4 pt-0">Justification</legend>
                     <div class="col-sm-8">
@@ -93,7 +93,7 @@
 
                  <div class="row justify-content-center">
                      <div class="col-3 text-center ">
-                     <input type="submit"  class="btn btn-success" name="actionID" value="save">
+                     <input type="submit"  class="btn btn-success" name="actionID" value="updateAb">
                       </div>
                      
                     </div>

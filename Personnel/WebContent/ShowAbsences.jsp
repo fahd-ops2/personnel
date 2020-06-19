@@ -59,16 +59,17 @@
                                         out.write("<td class='align-middle text-center'>"+rs.getString(2)+"</td>");
                                         out.write("<td class='align-middle text-center'>"+rs.getString(3)+"</td>");
                                         out.write("<td class='align-middle text-center'>"+rs.getString(5)+"</td>");
-                                    if(rs.getString(4).equals("non-justifier")){
+                                    if(rs.getString("Justification").equals("Non-justifier")){
                                         out.write("<td class='align-middle text-center'><div class='btn-danger' style='padding:8px;'><i class='fas fa-times'></i></div></td>");
-                                    }else{
+                                    }else if(rs.getString("Justification").equals("justifier")){
                                         out.write("<td class='align-middle text-center'><div class='btn-success' style='padding:8px;'><i class='fas fa-check'></i></div></td>");
                                     }
                                    
                                     out.write("<td class='align-middle text-center'>");
                                         
                                            
-                                        out.write("<form  action='UpdateAbsence.jsp' method='POST'>");
+                                            out.write("<form  action='UpdateAbsence.jsp' method='POST'>");
+                                            out.write("<input type='hidden' name ='id' value='"+rs.getInt("ID")+"' class='btn btn-info text-center'>");
                                             out.write("<input type='submit' value='modifier' class='btn btn-info text-center'>");
                                             out.write("</form>");
                                    

@@ -60,7 +60,7 @@ public class ServletAbsence extends HttpServlet {
 		if(actionID.equals("updateAb")){
 			String duree= request.getParameter("duree");
 			String justification= request.getParameter("justification");
-			int id=Integer.parseInt(request.getParameter("id"));
+			int id=Integer.parseInt(request.getParameter("idperso"));
 			Absence e =new Absence(id,duree,justification);
 			System.out.println(e.toString());
 	       try { 
