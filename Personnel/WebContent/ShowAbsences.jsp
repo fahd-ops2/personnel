@@ -23,7 +23,7 @@
             <div class="card-header">
               
                 <div class=" row">
-                    <a href="#" class="ml-auto"><button  type="button" class="btn btn-secondary"> Reteur <i class="fas fa-arrow-circle-left" style="color:snow;"></i></button></a>
+                    <a href="#" class="ml-auto"><button  type="button" class="btn btn-secondary"> Retour <i class="fas fa-arrow-circle-left" style="color:snow;"></i></button></a>
                      </div>
 
                      <div class="row">
@@ -53,10 +53,10 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <% 
+                              <% while(rs.next()){
                                 out.write("<tr>");
                                   
-                                    out.write("<td class='align-middle'>"+rs.getString(1)+"</th>");
+                                    out.write("<td class='align-middle'>"+rs.getString(1)+"</td>");
                                         out.write("<td class='align-middle'>"+rs.getString(2)+"</td>");
                                         out.write("<td class='align-middle'>"+rs.getString(3)+"</td>");
                                         out.write("<td class='align-middle'>"+rs.getString(4)+"</td>");
@@ -80,7 +80,7 @@
                                 
                               
                                             out.write("</tr>");
-                                            %>
+                              }  %>
                             </tbody>
                             </table>
 
