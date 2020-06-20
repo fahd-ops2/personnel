@@ -26,7 +26,7 @@
                      </div>
 
                      <div class="row">
-                        <a href="addAbsence.jsp"><button type="button" class="btn btn-success">Ajouter nouveau Absence</button></a>
+                        <a href="AjoutAbsence.jsp"><button type="button" class="btn btn-success">Ajouter nouveau Absence</button></a>
                          
                    </div>
           

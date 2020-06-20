@@ -15,8 +15,8 @@
        <%
          String cin= request.getParameter("idp");
          PersonnelDao per=new PersonnelDao();
-         ResultSet res =per.selectby(cin);
-         while (res.next()){
+         ResultSet res =per.SelectAll();
+       
 
        %>
    <div class="container">
@@ -33,9 +33,27 @@
      <div class="tab-content">
         
         
-      <input type="hidden" class=""   name="idperso" value="<%=res.getInt("ID") %>"><br><br>
+
 
                <div class="card-body tab-pane active" role="tabpanel" id="Stepe">
+               
+               
+                <div class="col-md-6 ml-auto mr-auto ">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                   <label class="input-group-text" for="inputGroupSelect01">Personnels</label>
+                  </div>
+                  <select class="custom-select" name="idperso">
+                   <option selected>Selectione</option>
+                <%  while(res.next()){
+                    out.write("<option value='"+res.getString(1)+"'>"+res.getString(2)+"</option>");
+                  }
+                    %>
+                 </select>
+                </div>
+              </div>
+               
+               
                  <div class="col-md-6 ml-auto mr-auto ">
                      <div class="form-group row">
                      <label for="dap">duree par jour:</label>
@@ -87,7 +105,7 @@
      </div>
      </div>
      </form>
-     <%} %>
+  
  </div>  
 </body>
 </html>
