@@ -58,10 +58,10 @@
                                     out.write("<td class='align-middle text-center'>"+rs.getString(1)+"</td>");
                                         out.write("<td class='align-middle text-center'>"+rs.getString(2)+"</td>");
                                         out.write("<td class='align-middle text-center'>"+rs.getString(3)+"</td>");
-                                        out.write("<td class='align-middle text-center'>"+rs.getString(5)+"</td>");
-                                    if(rs.getString("Justification").equals("Non-justifier")){
+                                        out.write("<td class='align-middle text-center'>"+rs.getString(6)+"</td>");
+                                    if(rs.getString(5).equals("Non-justifier")){
                                         out.write("<td class='align-middle text-center'><div class='btn-danger' style='padding:8px;'><i class='fas fa-times'></i></div></td>");
-                                    }else if(rs.getString("Justification").equals("justifier")){
+                                    }else{
                                         out.write("<td class='align-middle text-center'><div class='btn-success' style='padding:8px;'><i class='fas fa-check'></i></div></td>");
                                     }
                                    

@@ -95,6 +95,7 @@
                                         out.write("</div>");
                                         out.write("</div>");
                                         out.write("</div>");
+                                        out.write("</div>");
                                     }else{
 
                                         out.write("<div class='col-md-6 ml-auto mr-auto ''>");
@@ -112,6 +113,7 @@
                                                         out.write("<label class='form-check-label' for='gridRadios2'>");
                                                             out.write("Non");
                                                             out.write("</label>");
+                                                            out.write("</div>");
                                                             out.write("</div>");
                                                             out.write("</div>");
                                                             out.write("</div>");
@@ -172,6 +174,7 @@
                                             out.write("</div>");
                                             out.write("</div>");
                                             out.write("</div>");
+                                            out.write("</div>");
 
                                         }else if(res.getString("Situationfamiliale")=="motala9"){
     
@@ -208,10 +211,11 @@
                                                                 out.write("</div>");
                                                                 out.write("</div>");
                                                                 out.write("</div>");
+                                                                out.write("</div>");
      
                                         }else if(res.getString("Situationfamiliale").equals("motazawij")){
     
-                                            out.write("<div class='col-md-6 ml-auto mr-auto ''>");
+                                            out.write("<div class='col-md-6 ml-auto mr-auto '>");
                                                 out.write("<div class='form-group row'>");
                                                     out.write("<legend class='col-form-label col-sm-3 pt-0'>Situation familiale</legend>");
                                                     out.write("<div class='col-sm-9'>");
@@ -244,11 +248,12 @@
                                                                 out.write("</div>");
                                                                 out.write("</div>");
                                                                 out.write("</div>");
+                                                                out.write("</div>");
     
                                         }
                                         else if(res.getString("Situationfamiliale")=="celib"){
     
-                                            out.write("<div class='col-md-6 ml-auto mr-auto ''>");
+                                            out.write("<div class='col-md-6 ml-auto mr-auto'>");
                                                 out.write("<div class='form-group row'>");
                                                     out.write("<legend class='col-form-label col-sm-3 pt-0'>Situation familiale</legend>");
                                                     out.write("<div class='col-sm-9'>");
@@ -281,6 +286,7 @@
                                                                 out.write("</div>");
                                                                 out.write("</div>");
                                                                 out.write("</div>");
+                                                                out.write("</div>");
     
                                         };
                                 %>
@@ -294,7 +300,7 @@
                                 </div>
 
                                 <% if(res.getString("Marieemploye")=="oui"){
-                                    out.write("<div class='col-md-6 ml-auto mr-auto ''>");
+                                    out.write("<div class='col-md-6 ml-auto mr-auto'>");
                                         out.write("<div class='form-group row'>");
                                             out.write("<legend class='col-form-label col-sm-4 pt-0'>Marieemploye</legend>");
                                             out.write("<div class='col-sm-8'>");
@@ -312,9 +318,10 @@
                                                         out.write("</div>");
                                                         out.write("</div>");
                                                         out.write("</div>");
+                                                        out.write("</div>");
                                                     }else{
                 
-                                                        out.write("<div class='col-md-6 ml-auto mr-auto ''>");
+                                                        out.write("<div class='col-md-6 ml-auto mr-auto'>");
                                                             out.write("<div class='form-group row'>");
                                                                 out.write("<legend class='col-form-label col-sm-4 pt-0'>Marieemploye</legend>");
                                                                 out.write("<div class='col-sm-8'>");
@@ -332,11 +339,13 @@
                                                                     out.write("</div>");
                                                                out.write("</div>");
                                                               out.write("</div>");
+                                                              out.write("</div>");
+                                                              out.write("</div>");
                 
                                                     }
                                             %>
 
-                                <div class="col-md-6 ml-auto mr-auto ">
+                                <div class="col-md-6 ml-auto mr-auto">
                                     <div class="form-group row">
                                     <label for="tel">Num_tE</label>
                                     <input type="text"   name="Num_tE" value="<%=res.getString("Num_tE")%>"  class="form-control"  >

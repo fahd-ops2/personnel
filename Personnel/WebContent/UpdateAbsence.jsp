@@ -44,50 +44,50 @@
                      <span class="valid-feedback"></span>
                      </div>
                  </div>
-                 
+                 <% 
               
-                 if(res.getString("justification")=="justifier"){
-                  <div class="form-group row">
-                    <legend class="col-form-label col-sm-4 pt-0">Justification</legend>
-                    <div class="col-sm-8">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="justification"   value="justifier" checked>
-                        <label class="form-check-label" >
-                          justifier
-                        </label>
-                      </div>
+                 if(res.getString(5).equals("justifier")){
+                  out.write("<div class='form-group row'>");
+                  out.write("<legend class='col-form-label col-sm-4 pt-0'>Justification</legend>");
+                  out.write("<div class='col-sm-8'>");
+                  out.write("<div class='form-check form-check-inline'>");  
+                  out.write("<input class='form-check-input'  type='radio' name='justification'   value='justifier' checked>");  
+                  out.write(" <label class='form-check-label' >");   
+                  out.write(" justifier");      
+                  out.write(" </label>");     
+                  out.write(" </div>");   
                       
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="justification" value=" Non-justifier">
-                        <label class="form-check-label" >
-                         Non-justifier
-                        </label>
-                      </div>
-                </div>
-            </div>
+                  out.write("<div class='form-check form-check-inline'>");    
+                  out.write(" <input class='form-check-input' type='radio' name='justification' value='Non-justifier'>");     
+                  out.write(" <label class='form-check-label' >");    
+                  out.write(" Non-justifier");    
+                  out.write(" </label>");   
+                  out.write(" </div>");  
+                  out.write("</div>");  
+                  out.write("</div>"); 
   
 
                  }else{
-                  <div class="form-group row">
-                    <legend class="col-form-label col-sm-4 pt-0">Justification</legend>
-                    <div class="col-sm-8">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="justification"   value="justifier">
-                        <label class="form-check-label" >
-                          justifier
-                        </label>
-                      </div>
+                	 out.write("<div class='form-group row'>"); 
+                	 out.write("<legend class='col-form-label col-sm-4 pt-0'>Justification</legend>");
+                	 out.write("<div class='col-sm-8'>");
+                	 out.write("<div class='form-check form-check-inline'>"); 
+                	 out.write("<input class='form-check-input' type='radio' name='justification'   value='justifier'>");  
+                	 out.write("<label class='form-check-label' >");  
+                	 out.write("justifier");    
+                	 out.write("</label>");  
+                	 out.write("</div>"); 
                       
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="justification" value=" Non-justifier"  checked>
-                        <label class="form-check-label" >
-                         Non-justifier
-                        </label>
-                      </div>
-                </div>
-            </div>
+                	 out.write("<div class='form-check form-check-inline'>"); 
+                	 out.write(" <input class='form-check-input' type='radio' name='justification' value='Non-justifier'  checked>");  
+                	 out.write(" <label class='form-check-label' >");  
+                	 out.write(" Non-justifier");  
+                	 out.write(" </label>"); 
+                	 out.write("</div>"); 
+                	 out.write("</div>");
+                	 out.write("</div>"); 
                  }
-                
+                 %>
 
          
 
