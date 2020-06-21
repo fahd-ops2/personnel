@@ -44,7 +44,7 @@
                    <label class="input-group-text" for="inputGroupSelect01">Personnels</label>
                   </div>
                   <select class="custom-select" name="idperso">
-                   <option selected>Selectione</option>
+                   <option selected>Selectioner</option>
                 <%  while(res.next()){
                     out.write("<option value='"+res.getString(1)+"'>"+res.getString(2)+"</option>");
                   }
@@ -93,7 +93,7 @@
 
                  <div class="row justify-content-center">
                      <div class="col-3 text-center ">
-                     <input type="submit"  class="btn btn-success" name="actionID" value="save">
+                     <input type="submit"  class="btn btn-success" name="actionID" value="ajouterAb">
                       </div>
                      
                     </div>

@@ -127,6 +127,17 @@ public class PersonnelDao {
 				
 			}
 			return null;}
+	public ResultSet countall(){
+		try {
+			String req ="SELECT count(*) FROM `personnel ";
+			PreparedStatement pst= cna.prepareStatement(req);
+			return pst.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
 	public static void main(String[]args){
 		
 	    
@@ -151,7 +162,7 @@ public class PersonnelDao {
 			PersonnelDao ss= new PersonnelDao() ;
 			//ArrayList<Personnel> pp =ss.SelectAll();
 			//System.out.println(pp.toString());
-	   ResultSet res =ss.SelectAll();
+	   ResultSet res =ss.countall();
 		
 	    while (res.next()){
 	    	System.out.println(res.getObject(1));

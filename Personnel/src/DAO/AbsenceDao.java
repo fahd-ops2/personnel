@@ -94,13 +94,46 @@ public ResultSet selectbyid(int id){
 	}
 	return null;
 }
+public ResultSet countall(){
+	try {
+		String req ="SELECT count(*) FROM `absence`  ";
+		PreparedStatement pst= cna.prepareStatement(req);
+		return pst.executeQuery();
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	return null;
+}
+public ResultSet countalljus(){
+	try {
+		String req ="SELECT count(*) FROM `absence` WHERE `Justification`='justifier' ";
+		PreparedStatement pst= cna.prepareStatement(req);
+		return pst.executeQuery();
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	return null;
+}
+public ResultSet countallnjus(){
+	try {
+		String req ="SELECT count(*) FROM `absence` WHERE `Justification`='Non-justifier' ";
+		PreparedStatement pst= cna.prepareStatement(req);
+		return pst.executeQuery();
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	return null;
+}
 	public static void main(String[] args) {
 		
 		try {
 			AbsenceDao abd= new AbsenceDao();
-			ResultSet res= abd.selectbyid(1);
+			ResultSet res= abd.countallnjus();
 			while (res.next()){
-				System.out.println(res.getObject(1)+" "+res.getObject(2)+" "+res.getObject(3)+" "+res.getObject(4));
+				System.out.println(res.getObject(1));
 			}
 			//System.out.println(i);
 		} catch (Exception e) {
