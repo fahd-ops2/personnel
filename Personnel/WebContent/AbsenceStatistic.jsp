@@ -52,13 +52,9 @@
   <div class="container" style="height: 100vh;">
      
     <div class="row align-items-center" style="height: 100vh;" >
-      <div class="col" >
-        <canvas id="doughnutChart"></canvas>
-        <i id="persos" style="display: none;">100</i>
-        <i id="admins" style="display: none;">100</i>
-      </div>
+      
       <div class="col ">
-        <canvas id="pieChart"></canvas>
+        <canvas id="pieChart" style="margin-top:60px;"></canvas>
   <i id="absence" style="display: none;">100</i>
   <i id="presence" style="display: none;">200</i>
       </div>
@@ -93,26 +89,7 @@ responsive: true
 });
 
 
-//doughnut
-var ctxD = document.getElementById("doughnutChart").getContext('2d');
-var persos =document.getElementById("persos").innerText;
-  var admins=document.getElementById("admins").innerText;
-  var p=parseInt(pre);
-  var a=parseInt(absence);
-var myLineChart = new Chart(ctxD, {
-type: 'doughnut',
-data: {
-labels: ["Personnels",  "Admins"],
-datasets: [{
-data: [p,a],
-backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-}]
-},
-options: {
-responsive: true
-}
-});
+
 </script>
  <script >
    $('.carousel').carousel({
