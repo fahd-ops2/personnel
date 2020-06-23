@@ -52,13 +52,16 @@
 
   <div class="container" style="height: 100vh;">
        <div class="row align-items-center"  >
-
+										<!-- Hna ghdi tl9a fkola div class num fiha whd  data target 3mrha b data 3la hsab kola whda : -->
         <div class="col-4 num-personnels text-center">
              <div >
                <i class="fas fa-user-friends" style="font-size: 3em;" ></i>
              </div>
+             
+             							<!-- Peronnel Data target ht fiha data dyal personnel -->
+             
              <div class="num" style="font-size: xx-large; color: #F7464A;" data-target="1876">
-              0
+              0						 <!-- mat9isch 0 fkola whda  -->
              </div>
              Personnel
         </div>
@@ -67,6 +70,8 @@
                <i class='fas fa-check'  style="font-size: 3em;" style="padding: 0px;"></i>
              
              </div> 
+             					<!-- Absence justifier  -->
+             					
              <div class="num" style="font-size: xx-large; color: #F7464A;" data-target="150">
                0
              </div>
@@ -77,6 +82,9 @@
            <i class='fas fa-times'  style="font-size: 3em;"></i>
            
          </div> 
+         
+        							 <!-- Absence Non-justifier  -->
+        							 
          <div class="num" style="font-size: xx-large;color: #F7464A;" data-target="60">
          0
          </div>
@@ -89,8 +97,11 @@
       
       <div class="col ">
         <canvas id="pieChart" style=""></canvas>
-  <i id="absence" style="display: none;">100</i>
-  <i id="presence" style="display: none;">200</i>
+        
+       								 <!-- bdel les valuer dyal absenceJ:justifier o absenceN : Non justifier -->
+       								 
+  <i id="absenceJ" style="display: none;">100</i>
+  <i id="absenceN" style="display: none;">200</i>
       </div>
     </div>
 
@@ -102,8 +113,8 @@
 
  <script >
   var ctxP = document.getElementById("pieChart").getContext('2d');
-  var absence =document.getElementById("absence").innerText;
-  var pre=document.getElementById("presence").innerText;
+  var absence =document.getElementById("absenceJ").innerText;
+  var pre=document.getElementById("absenceN").innerText;
   var s=parseInt(pre);
   var b=parseInt(absence);
  
