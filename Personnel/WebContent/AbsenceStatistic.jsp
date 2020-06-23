@@ -8,8 +8,9 @@
   <!-- Material Design Bootstrap -->
   
   <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
   
+    
+
 <title>Insert title here</title>
 </head>
 <body>
@@ -50,11 +51,44 @@
   
 
   <div class="container" style="height: 100vh;">
-     
+       <div class="row align-items-center"  >
+
+        <div class="col-4 num-personnels text-center">
+             <div >
+               <i class="fas fa-user-friends" style="font-size: 3em;" ></i>
+             </div>
+             <div class="num" style="font-size: xx-large; color: #F7464A;" data-target="1876">
+              0
+             </div>
+             Personnel
+        </div>
+        <div class="col-4 num-absence-justifier text-center">
+             <div>
+               <i class='fas fa-check'  style="font-size: 3em;" style="padding: 0px;"></i>
+             
+             </div> 
+             <div class="num" style="font-size: xx-large; color: #F7464A;" data-target="150">
+               0
+             </div>
+             Absence justifier
+       </div>
+       <div class="col-4 num-absence-non-justifer text-center">
+         <div>
+           <i class='fas fa-times'  style="font-size: 3em;"></i>
+           
+         </div> 
+         <div class="num" style="font-size: xx-large;color: #F7464A;" data-target="60">
+         0
+         </div>
+         Absence Non-justifier
+       </div>
+      </div>
+
+      <script src="js/count.js"></script>
     <div class="row align-items-center" style="height: 100vh;" >
       
       <div class="col ">
-        <canvas id="pieChart" style="margin-top:60px;"></canvas>
+        <canvas id="pieChart" style=""></canvas>
   <i id="absence" style="display: none;">100</i>
   <i id="presence" style="display: none;">200</i>
       </div>
@@ -63,7 +97,7 @@
  
  </div>
 
-
+<script src="js/count.js"></script>
  <script type="text/javascript" src="charts/Chart.min.js"></script>
 
  <script >
