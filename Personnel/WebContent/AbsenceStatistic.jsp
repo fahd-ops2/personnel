@@ -4,11 +4,13 @@
 <html>
 <head>
 <meta charset="utf-8">
- 
-  <!-- Material Design Bootstrap -->
+   <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+       <script src="js/jquery.min.js"></script>
   
-  <!-- Your custom styles (optional) -->
-  
+         <script src="js/bootstrap.min.js" ></script>
+      
+         <link rel="stylesheet" href="fontawsome/css/all.min.css">
     
 
 <title>Insert title here</title>
