@@ -53,7 +53,7 @@
       </div>
  
       <div class="carousel-item">
-        <div class="text-center" style="position: absolute;background: linear-gradient(45deg, rgba(0, 0, 0, 0.6) ,rgba(255, 255, 255, 0.5) );width:100% ; height: 670px;">
+        <div class="text-center" style="position: absolute;background: linear-gradient(45deg, rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.5) );width:100% ; height: 670px;">
      
             <div class="card-deck" style="margin-top: 200px;color: snow;margin:  200px;">
               <div class="card" style="background:none;border:none;">
@@ -87,7 +87,7 @@
        
       </div>
       <div class="carousel-item">
-        <div class="text-center" style="position: absolute;background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) ,rgba(255, 255, 255, 0.2) );width:100% ; height: 670px;">
+        <div class="text-center" style="position: absolute;background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) ,rgba(0, 0, 0, 0.2) );width:100% ; height: 670px;">
         <div style="width: 900px;margin:190px ; margin-left:300px;color: snow;">
           <h1><i class="fas fa-chart-pie" style="font-size: 5em;"></i></h1>
           <h1>Statistics</h1>
