@@ -27,17 +27,59 @@
     <div class="carousel-inner ">
    
       <div class="carousel-item active text-center">
+        <div class="text-center" style="position: absolute;background: linear-gradient(45deg, yellow ,red);width:100% ; height: 670px;color: snow;">
+         <div style="margin-top:180px;"> <h1 style="font-size: 5em;">BIENVENEUE</h1>
+          <button type="button" class="btn btn-primary btn-lg">Personnel</button>
+        </div>
+        </div>
         
-        <img class="d-block w-100" src="Images/background2.png" alt="First slide" height="670px">
+        <img class="d-block w-100" src="Images/background2.png" alt="First slide" height="670px" style="z-index: -1;">
       
       </div>
  
       <div class="carousel-item">
-        <img class="d-block w-100" src="Images/background3.png" alt="Second slide" height="670px">
+        <div class="text-center" style="position: absolute;background: linear-gradient(45deg, rgba(0, 0, 0, 0.6) ,rgba(255, 255, 255, 0.5) );width:100% ; height: 670px;">
+     
+            <div class="card-deck" style="margin-top: 200px;color: snow;margin:  200px;">
+              <div class="card" style="background:none;border:none;">
+               
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 1.5em;">Gestion d'absence</h5>
+                  <i class='fas fa-check'  style="font-size: 3em;" style="padding: 0px;"></i>
+                  
+                </div>
+              </div>
+              <div class="card" style="background:none;border:none;">
+               
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 1.5em;">Gestion de Personnel</h5>
+                  <i class='fas fa-check'  style="font-size: 3em;" style="padding: 0px;"></i>
+               
+                </div>
+              </div>
+              <div class="card" style="background:none;border:none;">
+             
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 1.5em;">Gestion d'admins</h5>
+                  <i class='fas fa-check'  style="font-size: 3em;" style="padding: 0px;"></i>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+     
+        <img class="d-block w-100" src="Images/img1.jpg" alt="Second slide" height="670px" style="z-index: -1;">
        
       </div>
       <div class="carousel-item">
-          <img class="d-block w-100" src="Images/background.png" height="670px">
+        <div class="text-center" style="position: absolute;background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) ,rgba(255, 255, 255, 0.2) );width:100% ; height: 670px;">
+        <div style="width: 900px;margin:190px ; margin-left:300px;color: snow;">
+          <h1><i class="fas fa-chart-pie" style="font-size: 5em;"></i></h1>
+          <h1>Statistics</h1>
+        </div>
+       </div>
+       </div>
+          <img class="d-block w-100" src="Images/img2.jpg" height="670px" style="z-index: -1;">
     
       </div>
     </div>
