@@ -42,9 +42,9 @@
    <div class="carousel-inner ">
    
       <div class="carousel-item active text-center">
-        <div class="text-center" style="position: absolute;background: linear-gradient(45deg, yellow ,red);width:100% ; height: 670px;color: snow;">
-         <div style="margin-top:180px;"> <h1 style="font-size: 5em;">BIENVENEUE</h1>
-          <button type="button" class="btn btn-primary btn-lg">Personnel</button>
+        <div class="text-center" style="position: absolute;background: linear-gradient(93, 109, 126);width:100% ; height: 670px;color: snow;">
+         <div style="margin-top:180px;"> <h1 style="font-size: 5em;">BIENVENUE</h1>
+          <button type="button" class="btn  btn-secondary btn-lg">Personnel</button>
         </div>
         </div>
         
