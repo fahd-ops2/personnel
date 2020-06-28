@@ -139,35 +139,35 @@
                     </div>
 
 
-                    <% if(res.getString("Situationfamiliale").equals("armal")){
+                    <% if(res.getString("Situationfamiliale").equals("v")){
 
                         out.write("<div class='col-md-6 ml-auto mr-auto'>");
                             out.write("<div class='form-group row'>");
                                 out.write("<legend class='col-form-label col-sm-3 pt-0'>Situation familiale</legend>");
                                 out.write("<div class='col-sm-9'>");
                                     out.write("<div class='form-check form-check-inline'>");
-                                        out.write("<input class='form-check-input' type='radio' name='Situationfamiliale'    value='armal'checked >"); 
+                                        out.write("<input class='form-check-input' type='radio' name='Situationfamiliale'    value='c' >"); 
                                         out.write("<label class='form-check-label' for='gridRadios1'>");
                                             out.write(" Celebataire");
                                       out.write("</label>");
                                       out.write("</div>");
 
                                       out.write("<div class='form-check form-check-inline'>");
-                                        out.write("<input class='form-check-input'   type='radio' name='Situationfamiliale'   value='Mariee'   >"); 
+                                        out.write("<input class='form-check-input'   type='radio' name='Situationfamiliale'   value='m'   >"); 
                                         out.write("<label class='form-check-label' for='gridRadios1'>");
                                             out.write("Mariee");
                                       out.write("</label>");
                                       out.write("</div>");
 
                                       out.write("<div class='form-check form-check-inline'>");
-                                        out.write("<input class='form-check-input'   type='radio' name='Situationfamiliale'    value='veuf'>"); 
+                                        out.write("<input class='form-check-input'   type='radio' name='Situationfamiliale'    value='v' checked>"); 
                                         out.write("<label class='form-check-label' for='gridRadios1'>");
                                             out.write("veuf");
                                       out.write("</label>");
                                       out.write("</div>"); 
 
                                       out.write("<div class='form-check form-check-inline'>");
-                                        out.write("<input class='form-check-input' type='radio'   name='Situationfamiliale'  value='motala9'>");
+                                        out.write("<input class='form-check-input' type='radio'   name='Situationfamiliale'  value='d'>");
                                         out.write("<label class='form-check-label' for='gridRadios2'>");
                                             out.write("divorce");
                                             out.write("</label>");
@@ -176,35 +176,35 @@
                                             out.write("</div>");
                                             out.write("</div>");
 
-                                        }else if(res.getString("Situationfamiliale").equals("motala9")){
+                                        }else if(res.getString("Situationfamiliale").equals("m")){
     
                                             out.write("<div class='col-md-6 ml-auto mr-auto ''>");
                                                 out.write("<div class='form-group row'>");
                                                     out.write("<legend class='col-form-label col-sm-3 pt-0'>Situation familiale</legend>");
                                                     out.write("<div class='col-sm-9'>");
                                                         out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input' type='radio'  type='radio' name='Situationfamiliale'    value='Oui' >"); 
+                                                            out.write("<input class='form-check-input' type='radio'  type='radio' name='Situationfamiliale'      value='c' >"); 
                                                             out.write("<label class='form-check-label' for='gridRadios1'>");
                                                                 out.write(" Celebataire");
                                                           out.write("</label>");
                                                           out.write("</div>");
 
                                                           out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input'   type='radio' name='Situationfamiliale'   value='Oui' checked  >"); 
+                                                            out.write("<input class='form-check-input'   type='radio' name='Situationfamiliale'   value='m' checked  >"); 
                                                             out.write("<label class='form-check-label' for='gridRadios1'>");
                                                                 out.write("Mariee");
                                                           out.write("</label>");
                                                           out.write("</div>");
 
                                                           out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'    value='Oui'>"); 
+                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'     value='v' >"); 
                                                             out.write("<label class='form-check-label' for='gridRadios1'>");
                                                                 out.write("veuf");
                                                           out.write("</label>");
                                                           out.write("</div>"); 
 
                                                           out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input' type='radio'   name='Situationfamiliale'  value='Non'>");
+                                                            out.write("<input class='form-check-input' type='radio'   name='Situationfamiliale'   value='d' >");
                                                             out.write("<label class='form-check-label' for='gridRadios2'>");
                                                                 out.write("divorce");
                                                                 out.write("</label>");
@@ -213,35 +213,35 @@
                                                                 out.write("</div>");
                                                                 out.write("</div>");
      
-                                        }else if(res.getString("Situationfamiliale").equals("motazawij")){
+                                        }else if(res.getString("Situationfamiliale").equals("c")){
     
                                             out.write("<div class='col-md-6 ml-auto mr-auto '>");
                                                 out.write("<div class='form-group row'>");
                                                     out.write("<legend class='col-form-label col-sm-3 pt-0'>Situation familiale</legend>");
                                                     out.write("<div class='col-sm-9'>");
                                                         out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'    value='Oui' >"); 
+                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'    value='c' checked>"); 
                                                             out.write("<label class='form-check-label' for='gridRadios1'>");
                                                                 out.write(" Celebataire");
                                                           out.write("</label>");
                                                           out.write("</div>");
 
                                                           out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'   value='Oui' >"); 
+                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'   value='m' >"); 
                                                             out.write("<label class='form-check-label' for='gridRadios1'>");
                                                                 out.write("Mariee");
                                                           out.write("</label>");
                                                           out.write("</div>");
 
                                                           out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'    value='Oui' checked >"); 
+                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'    value='v'  >"); 
                                                             out.write("<label class='form-check-label' for='gridRadios1'>");
                                                                 out.write("veuf");
                                                           out.write("</label>");
                                                           out.write("</div>"); 
 
                                                           out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input' type='radio'   name='Situationfamiliale'  value='Non'>");
+                                                            out.write("<input class='form-check-input' type='radio'   name='Situationfamiliale'  value='d'>");
                                                             out.write("<label class='form-check-label' for='gridRadios2'>");
                                                                 out.write("divorce");
                                                                 out.write("</label>");
@@ -251,35 +251,35 @@
                                                                 out.write("</div>");
     
                                         }
-                                        else if(res.getString("Situationfamiliale").equals("celib")){
+                                        else if(res.getString("Situationfamiliale").equals("d")){
     
                                             out.write("<div class='col-md-6 ml-auto mr-auto'>");
                                                 out.write("<div class='form-group row'>");
                                                     out.write("<legend class='col-form-label col-sm-3 pt-0'>Situation familiale</legend>");
                                                     out.write("<div class='col-sm-9'>");
                                                         out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input' type='radio' name='Situationfamiliale'    value='Oui' >"); 
+                                                            out.write("<input class='form-check-input' type='radio' name='Situationfamiliale'    value='c' >"); 
                                                             out.write("<label class='form-check-label' for='gridRadios1'>");
                                                                 out.write(" Celebataire");
                                                           out.write("</label>");
                                                           out.write("</div>");
 
                                                           out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'   value='Oui' >"); 
+                                                            out.write("<input class='form-check-input'  type='radio' name='Situationfamiliale'   value='m' >"); 
                                                             out.write("<label class='form-check-label' for='gridRadios1'>");
                                                                 out.write("Mariee");
                                                           out.write("</label>");
                                                           out.write("</div>");
 
                                                           out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input' type='radio' name='Situationfamiliale'    value='Oui' >"); 
+                                                            out.write("<input class='form-check-input' type='radio' name='Situationfamiliale'    value='v' >"); 
                                                             out.write("<label class='form-check-label' for='gridRadios1'>");
                                                                 out.write("veuf");
                                                           out.write("</label>");
                                                           out.write("</div>"); 
 
                                                           out.write("<div class='form-check form-check-inline'>");
-                                                            out.write("<input class='form-check-input' type='radio'   name='Situationfamiliale'  checked value='Non'>");
+                                                            out.write("<input class='form-check-input' type='radio'   name='Situationfamiliale'  checked value='d'>");
                                                             out.write("<label class='form-check-label' for='gridRadios2'>");
                                                                 out.write("divorce");
                                                                 out.write("</label>");
@@ -319,6 +319,12 @@
                                                         out.write("</div>");
                                                         out.write("</div>");
                                                         out.write("</div>");
+                                                        out.write("<div class='col-md-6 ml-auto mr-auto'>");
+                                                        out.write("<div class='form-group row'>");
+                                                        out.write(" <label for='tel'>Num_tE</label>");         
+                                                        out.write("<input type='text'   name='Num_tE' value='"+res.getString("Num_tE")+"'  class='form-control'  >");
+                                                                
+                                                       out.write("<span class='valid-feedback'></span></div></div>") ;
                                                     }else{
                 
                                                         out.write("<div class='col-md-6 ml-auto mr-auto'>");
@@ -345,13 +351,7 @@
                                                     }
                                             %>
 
-                                <div class="col-md-6 ml-auto mr-auto">
-                                    <div class="form-group row">
-                                    <label for="tel">Num_tE</label>
-                                    <input type="text"   name="Num_tE" value="<%=res.getString("Num_tE")%>"  class="form-control"  >
-                                    <span class="valid-feedback"></span>
-                                    </div>
-                                </div>
+                             
 
      
                  <%} %>
