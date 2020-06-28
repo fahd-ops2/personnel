@@ -44,7 +44,7 @@
       <div class="carousel-item active text-center">
         <div class="text-center" style="position: absolute;background: linear-gradient(93, 109, 126);width:100% ; height: 670px;color: snow;">
          <div style="margin-top:180px;"> <h1 style="font-size: 5em;">BIENVENUE</h1>
-          <button type="button" class="btn  btn-secondary btn-lg">Personnel</button>
+           <a class="nav-link" href="ShowPersonnel.jsp"><button type="button" class="btn  btn-secondary btn-lg">Personnel</button></a>
         </div>
         </div>
         
