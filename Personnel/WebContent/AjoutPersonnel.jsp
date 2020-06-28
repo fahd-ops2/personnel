@@ -5,7 +5,7 @@
 <head>
 <meta charset=utf-8 >
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Insert title here</title>
+<title>ajout du personnel</title>
 </head>
 <body>
       <%@ include file="Index.html" %>
@@ -18,10 +18,10 @@
                      </div>
                 <ul class="nav nav-tabs card-header-tabs ">
                     <li class="nav-item">
-                      <a class="nav-link active " href="#Stepe" data-toggle="tab">Ajoute Personnel</a>
+                      <a class="nav-link active " href="#Stepe" data-toggle="tab">Ajout d'un Personnel</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#Steps" data-toggle="tab">Suivi L'ajoute </a>
+                      <a class="nav-link " href="#Steps" data-toggle="tab">Suivi d'ajout </a>
                     </li>
                 
                    

@@ -33,7 +33,7 @@
                           <a class="nav-link" href="#depsa" data-toggle="tab">Diplome professionnel </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#adddep" data-toggle="tab">Ajoute deplome</a>
+                            <a class="nav-link" href="#adddep" data-toggle="tab">Ajoute de diplome</a>
                           </li>
                        
                       </ul>
@@ -44,7 +44,7 @@
                         <!--code de liste Diplome scolaire et universitaire-->
                     <div class="card-body tab-pane active" role="tabpanel" id="deps">
                         <div class="row">
-                            <h1 class="title ml-auto mr-auto">Diplome scolaire et universitaire</h1>
+                            <h1 class="title ml-auto mr-auto">Diplomes scolaires et universitaires</h1>
                         </div>
                         <table class="table myDatatable" id="myTable">
                                  <thead class="thead-dark">
@@ -79,7 +79,7 @@
                     <!--code de liste deplome professionnel-->
                     <div class="card-body tab-pane " role="tabpanel" id="depsa">
                         <div class="row">
-                            <h1 class="title ml-auto mr-auto">Diplome professionnel</h1>
+                            <h1 class="title ml-auto mr-auto">Diplomes professionnels</h1>
                         </div>
                         <table class="table myDatatable" id="myTable">
                                  <thead class="thead-dark">
@@ -122,30 +122,30 @@
 
        						%>
                                 <form method="post" action="Diplomes">
-                                    <h3>Diplome scolaire et universitaire </h3>
+                                    <h3>Diplomes scolaires et universitaires </h3>
                                     
                                     <input type='hidden' class=''   name='PersonnelID' value="<%=resp.getInt("ID")%>"> 
                                    
                                     
                                     <div class="form-group">
-                                      <label for="exampleInputEmail1">Nom de diplome</label>
-                                      <input type="text" class="form-control"  name="DiplomeSU" id="" aria-describedby="Nom de deplome">
-                                      <small id="emailHelp" class="form-text text-muted">Inserer le nome de Deplome</small>
+                                      <label for="exampleInputEmail1"> diplome</label>
+                                      <input type="text" class="form-control"  name="DiplomeSU" id="" aria-describedby="diplome">
+                                      <small id="emailHelp" class="form-text text-muted">Inserer le Diplome</small>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Date d'obtention</label>
-                                        <input type="date" class="form-control"  name="DateobtentionSu" aria-describedby="Nom de deplome" placeholder="dd/mm/yyyy" min="01/01/1900" max="12/31/2050">
-                                        <small id="emailHelp" class="form-text text-muted">Inserer la Date de Deplome</small>
+                                        <input type="date" class="form-control"  name="DateobtentionSu" aria-describedby="diplome" placeholder="dd/mm/yyyy" min="01/01/1900" max="12/31/2050">
+                                        <small id="emailHelp" class="form-text text-muted">Inserer la Date de Diplome</small>
                                       </div>
                                       <div class="form-group">
                                         <label for="exampleInputEmail1">Faculte </label>
                                         <input type="text" class="form-control"  name="Faculte" aria-describedby="Faculte">
-                                        <small id="emailHelp" class="form-text text-muted">Inserer le Code de specialtee </small>
+                                        <small id="emailHelp" class="form-text text-muted">Inserer la faculte</small>
                                       </div>
                                       <div class="form-group">
                                         <label for="exampleInputEmail1">Specialtee </label>
                                         <input type="text" class="form-control"  name="Specialitee" aria-describedby="Nom de deplome">
-                                        <small id="emailHelp" class="form-text text-muted">Inserer le Code de specialtee </small>
+                                        <small id="emailHelp" class="form-text text-muted">Inserer la specialtee </small>
                                       </div>
                                       <div class="form-group">
                                         <label for="exampleInputEmail1">Code de specialtee </label>
@@ -165,14 +165,14 @@
                                      <input type='hidden' class=''   name='PersonnelID' value="<%=resp.getInt("ID")%>">
                                    
                                     <div class="form-group">
-                                      <label for="exampleInputEmail1">Nom de diplome</label>
+                                      <label for="exampleInputEmail1"> diplome</label>
                                       <input type="text" class="form-control"  name="DiplomeP" id="" aria-describedby="Nom de deplome">
-                                      <small id="emailHelp" class="form-text text-muted">Inserer le nome de Deplome</small>
+                                      <small id="emailHelp" class="form-text text-muted">Inserer diplome</small>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Date d'obtenir</label>
                                         <input type="date" class="form-control"  name="DateObtentionP" aria-describedby="Nom de deplome" placeholder="dd/mm/yyyy" min="01/01/1900" max="12/31/2050">
-                                        <small id="emailHelp" class="form-text text-muted">Inserer la Date de Deplome</small>
+                                        <small id="emailHelp" class="form-text text-muted">Inserer la Date de diplome</small>
                                       </div>
                                       <div class="form-group">
                                         <label for="exampleInputEmail1">specialtee </label>

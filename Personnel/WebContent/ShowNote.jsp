@@ -32,10 +32,10 @@
                     <a class="nav-link " href="#notePro" data-toggle="tab">note prospection</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#NoteAdministratif" data-toggle="tab">Ajoute Administratif</a>
+                    <a class="nav-link" href="#NoteAdministratif" data-toggle="tab">Ajout d'une note Administratif</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#hello" data-toggle="tab">Ajouter note prospection</a>
+                    <a class="nav-link" href="#hello" data-toggle="tab">Ajout d'une note prospection</a>
                   </li>
                   
                   
@@ -133,13 +133,13 @@
                                   <label for="exampleInputEmail1">note prospection</label>
                                   
                                   <input type="text" class="form-control"  name="NoteProspection" id="" >
-                                  <small id="emailHelp" class="form-text text-muted">Inserer la Mission</small>
+                                  <small id="emailHelp" class="form-text text-muted">Inserer la note </small>
                                 </div>
 
                                 <div class="form-group">
                                   <label for="exampleInputEmail1">Date obtention Pro </label>
                                   <input type="date" class="form-control"  name="DateobtentionPro" id="" >
-                                  <small id="emailHelp" class="form-text text-muted">Inserer la Mission</small>
+                                  <small id="emailHelp" class="form-text text-muted">Inserer la date </small>
                                 </div>
 
                                 <input type="submit" name="actionID" class="btn btn-primary" value="addNotep">

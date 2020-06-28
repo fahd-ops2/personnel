@@ -16,10 +16,10 @@
               	<div class="card-header">
                		 <ul class="nav nav-tabs card-header-tabs">
                   	<li class="nav-item">
-                   	 <a class="nav-link active" href="#Showcadre" data-toggle="tab">Cadre histori</a>
+                   	 <a class="nav-link active" href="#Showcadre" data-toggle="tab">Cadre recents</a>
                  	 </li>
                   	<li class="nav-item">
-                   	 <a class="nav-link " href="#addCadre" data-toggle="tab">ajouter un cadre</a>
+                   	 <a class="nav-link " href="#addCadre" data-toggle="tab">affecter un cadre</a>
                   	</li>
                   
 	                </ul>
