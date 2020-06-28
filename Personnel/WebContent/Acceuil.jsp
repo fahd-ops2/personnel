@@ -17,7 +17,7 @@
          <link rel="stylesheet" href="fontawsome/css/all.min.css">
     
 
-<title>Insert title here</title>
+<title>acceuil</title>
 </head>
 <body>
 
@@ -67,7 +67,7 @@
               <div class="card" style="background:none;border:none;">
                
                 <div class="card-body">
-                  <h5 class="card-title" style="font-size: 1.5em;">Gestion de Personnel</h5>
+                  <h5 class="card-title" style="font-size: 1.5em;">Gestion du Personnel</h5>
                   <i class='fas fa-check'  style="font-size: 3em;" style="padding: 0px;"></i>
                
                 </div>

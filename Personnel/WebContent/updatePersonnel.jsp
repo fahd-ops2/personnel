@@ -133,7 +133,7 @@
                     <div class="col-md-6 ml-auto mr-auto ">
                         <div class="form-group row">
                         <label for="tel">Echelon:</label>
-                        <input type="text" name="Echelle" value="<%=res.getString("Echelon")%>"  class="form-control"  >
+                        <input type="text" name="Echelon" value="<%=res.getString("Echelon")%>"  class="form-control"  >
                         <span class="valid-feedback"></span>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
 
                     <% if(res.getString("Situationfamiliale")=="armal"){
 
-                        out.write("<div class='col-md-6 ml-auto mr-auto ''>");
+                        out.write("<div class='col-md-6 ml-auto mr-auto'>");
                             out.write("<div class='form-group row'>");
                                 out.write("<legend class='col-form-label col-sm-3 pt-0'>Situation familiale</legend>");
                                 out.write("<div class='col-sm-9'>");
