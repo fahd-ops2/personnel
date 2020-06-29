@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" 
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" 
+    pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -62,25 +62,25 @@
                                 <legend class="col-form-label col-sm-3 pt-0">Situation familiale</legend>
                                 <div class="col-sm-9">
                                   <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio"  name="Situationfamiliale" id="cele" value="celebataire" checked>
+                                    <input class="form-check-input" type="radio"  name="Situationfamiliale" id="cele" value="c" checked>
                                     <label class="form-check-label" for="cele">
                                      Celebataire
                                     </label>
                                   </div>
                                   <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio"   name="Situationfamiliale" id="mari" value="Mariee">
+                                    <input class="form-check-input" type="radio"   name="Situationfamiliale" id="mari" value="m">
                                     <label class="form-check-label" for="mari">
                                      Mariee
                                     </label>
                                   </div>
                                   <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio"  name="Situationfamiliale" id="gveuf" value="veuf">
+                                    <input class="form-check-input" type="radio"  name="Situationfamiliale" id="gveuf" value="v">
                                     <label class="form-check-label" for="veuf">
                                         veuf
                                     </label>
                                   </div>
                                   <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio"  name="Situationfamiliale" id="radio" value="divorce">
+                                    <input class="form-check-input" type="radio"  name="Situationfamiliale" id="radio" value="d">
                                     <label class="form-check-label" for="divorce">
                                     divorce
                                     </label>
